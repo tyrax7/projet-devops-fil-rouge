@@ -28,3 +28,9 @@ jobs:
       
       - name: Lancer les tests automatisés
         run: npm test
+
+      - name: Sauvegarder le fichier HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: mon-site-web
+          path: index.html
